@@ -43,7 +43,7 @@ Cypress.Commands.add('recommendContent', () => {
   cy.get('[data-test-id="row-checkbox-0"]').check()
   cy.get('[data-test-id="multi-assign-btn"]').click()
   cy.get('[data-test-id="new-assignment-post-button"]').click()
-  cy.get('[data-test-id="multi-assign-btn"]').should('be.disabled')
+  cy.get('[data-test-id="toast-CreateAssignmentNotification"]').should('be.visible')
 })
 
 Cypress.Commands.add('removeStudent', () => {
