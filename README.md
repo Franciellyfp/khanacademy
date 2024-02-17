@@ -31,7 +31,7 @@ It's necessary to have a configured Teacher account and a configured Student acc
 In this project, you can run tests in interactive and headless modes
 ### Headless mode
 
-Run `npm run test` to run all tests in headless mode using a desktop viewport.
+Run `npm test` to run all tests in headless mode using a desktop viewport.
 
 ### Interactive mode
 

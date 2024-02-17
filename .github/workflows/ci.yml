@@ -24,7 +24,9 @@ jobs:
       - name: Run end-to-end tests on desktop viewport 🧪
         uses: cypress-io/github-action@v5
         env:
-          CYPRESS_USER_EMAIL: ${{ secrets.CYPRESS_USER_EMAIL }}
-          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD }}
+          CYPRESS_USER_EMAIL_TEACHER: ${{ secrets.CYPRESS_USER_EMAIL_TEACHER }}
+          CYPRESS_USER_PASSWORD_TEACHER: ${{ secrets.CYPRESS_USER_PASSWORD_TEACHER }}
+          CYPRESS_USER_EMAIL_STUDENT: ${{ secrets.CYPRESS_USER_EMAIL_STUDENT }}
+          CYPRESS_USER_PASSWORD_STUDENT: ${{ secrets.CYPRESS_USER_PASSWORD_STUDENT }}
         with:
           command: npm test
