@@ -14,7 +14,7 @@ describe('Scenarios where authentication is a pre-condition', () => {
     cy.createClass(className, student)
   })
 
-  it('Recommend content', () => {
+  it.only('Recommend content', () => {
 
     const className = faker.lorem.words(4)
     const student = faker.name.firstName()
