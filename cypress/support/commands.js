@@ -14,7 +14,7 @@ Cypress.Commands.add('guiLoginStudent', (email = Cypress.env('USER_EMAIL_STUDENT
   cy.contains('[data-learn-menu-trigger="true"]','Cursos').should('be.visible')
 })
 
-Cypress.Commands.add('sessionLogin', (username = Cypress.env('USER_EMAIL'), password = Cypress.env('USER_PASSWORD')) => {
+Cypress.Commands.add('sessionLogin', (username = Cypress.env('USER_EMAIL_TEACHER'), password = Cypress.env('USER_PASSWORD_TEACHER')) => {
   const login = () => cy.guiLoginTeacher(username, password)
   cy.session(username, login)
 })
