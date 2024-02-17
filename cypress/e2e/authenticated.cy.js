@@ -1,5 +1,7 @@
 import { faker } from '@faker-js/faker/locale/en'
 
+
+
 describe('Scenarios where authentication is a pre-condition', () => {
   beforeEach(() => {
     cy.sessionLogin()
@@ -10,10 +12,10 @@ describe('Scenarios where authentication is a pre-condition', () => {
     const student = faker.name.firstName()
 
     cy.createClass(className, student)
-
   })
 
   it('Recommend content', () => {
+
     const className = faker.lorem.words(4)
     const student = faker.name.firstName()
 
